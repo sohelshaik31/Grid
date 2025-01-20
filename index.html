@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calander</title>
+</head>
+<style>
+    body{
+        height: 100vh;
+        /* padding: 10px; */
+    }
+    .grid-container{
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        grid-template-columns: repeat(10, 10%);
+        grid-template-rows: repeat(6, 16%);
+    }
+    .grid-items{
+        width: 100%;
+        border: 0.1px dashed black;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+    }
+    .grid-items p{
+        font-size: clamp(2rem, 4.5vw, 2rem);
+        margin: 10% 5%;
+        font-weight: bold;
+    }
+    .box1{
+        grid-area: 1/1/3/3;
+        background-color: aquamarine;
+    }
+    .box2{
+        grid-column: 3/5;
+        background-color: rgb(252, 252, 252);
+    }
+    .box3{
+        background-color: rgb(182, 205, 241);
+    }
+    .box4{
+        grid-area: 1/6/3/8;
+        background-color: rgb(185, 222, 110);
+    }
+    .box5{
+        grid-column: 8/10 ;
+    }
+    .box6{
+        background-color: rgb(235, 130, 226);
+    }
+    .box7{
+        grid-column: 1/3;
+        background-color: rgb(231, 198, 122);
+    }
+    .box8{
+        grid-row: 2/4;
+    }
+    .box9{
+        grid-area: 2/4/4/6;
+        background-color: rgb(235, 130, 226);
+    }
+    .box10{
+        grid-column: 6/8;
+    }
+    .box11{
+        grid-row: 2/4;
+        background-color: rgb(182, 205, 241);
+    }
+    .box12{
+        grid-area: 2/9/4/11;
+    }
+    .box14{
+        grid-column: 2/4;
+    }
+    .box15{
+        grid-area: 4/4/6/6;
+    }
+    .box16{
+        background-color: rgb(235, 130, 226);
+    }
+    .box17{
+        grid-column: 7/9;
+    }
+    .box18{
+        grid-area: 4/9/6/11;
+        background-color: rgb(231, 198, 122);
+    }
+    .box19{
+        grid-area: 5/1/7/3;
+        background-color: rgb(182, 205, 241);
+    }
+    .box20{
+        grid-row: 5/7;
+    }
+    .box21{
+        grid-column: 4/6;
+    }
+    .box22{
+        grid-area: 5/6/7/8;
+        background-color: rgb(194, 245, 245);
+    }
+    .box23{
+        grid-row: 5/7;
+    }
+    .box24{
+        grid-column: 9/11;
+    }
+</style>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-items box1"><p>01</p></div>
+        <div class="grid-items box2"><p>02</p></div>
+        <div class="grid-items box3"><p>03</p></div>
+        <div class="grid-items box4"><p>04</p></div>
+        <div class="grid-items box5"><p>05</p></div>
+        <div class="grid-items box6"><p>06</p></div>
+
+        <div class="grid-items box7"><p>07</p></div>
+        <div class="grid-items box8"><p>08</p></div>
+        <div class="grid-items box9"><p>09</p></div>
+        <div class="grid-items box10"><p>10</p></div>
+        <div class="grid-items box11"><p>11</p></div>
+        <div class="grid-items box12"><p>12</p></div>
+
+        <div class="grid-items box13"><p>13</p></div>
+        <div class="grid-items box14"><p>14</p></div>
+        <div class="grid-items box15"><p>15</p></div>
+        <div class="grid-items box16"><p>16</p></div>
+        <div class="grid-items box17"><p>17</p></div>
+        <div class="grid-items box18"><p>18</p></div>
+
+        <div class="grid-items box19"><p>19</p></div>
+        <div class="grid-items box20"><p>20</p></div>
+        <div class="grid-items box21"><p>21</p></div>
+        <div class="grid-items box22"><p>22</p></div>
+        <div class="grid-items box23"><p>23</p></div>
+        <div class="grid-items box24"><p>24</p></div>
+    </div>
+</body>
+</html>
